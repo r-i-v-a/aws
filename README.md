@@ -18,11 +18,30 @@
   - [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed-instances-default-host-management.html)
     - Using default role `service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole`
 
-- [ ] [Verify or add permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
+- [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
 
 - [ ] [Create a custom IAM role for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-create-iam-instance-profile.html)
 
-SessionManagerForEC2
+Create policy `SessionManagerPolicy`
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ssm:UpdateInstanceInformation",
+                "ssmmessages:CreateControlChannel",
+                "ssmmessages:CreateDataChannel",
+                "ssmmessages:OpenControlChannel",
+                "ssmmessages:OpenDataChannel"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
 
 - [ ] Create a key pair
 
@@ -43,6 +62,8 @@ Yes
 - [ ] Error -- Session Manager not able to connect
 
 - [ ] Check if role is attached to instance?
+
+- [ ] [Attach or replace an instance profile](https://aws.amazon.com/premiumsupport/knowledge-center/attach-replace-ec2-instance-profile/)
 
 - [ ] [Modify IAM role for instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#ModifyIAMRole)
 
