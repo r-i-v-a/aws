@@ -65,7 +65,7 @@ SessionManagerRoleForEC2 trusted entities
 
 - [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
   - [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed-instances-default-host-management.html)
-    - Using default role `service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole`
+    - Also tried this setting at account level, but it did not result in Session Manager being able to connect to EC2 instances by default
 
 ## Run EC2 Instance, Connect
 
