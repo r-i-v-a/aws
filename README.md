@@ -19,10 +19,11 @@
     - Using default role `service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole`
 
 - [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
+  - [Create a custom IAM role for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-create-iam-instance-profile.html)
+    - Create policy `SessionManagerPolicy`
+    - Create role `SessionManagerRoleForEC2`; add `SessionManagerPolicy`
 
-- [ ] [Create a custom IAM role for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-create-iam-instance-profile.html)
-
-Create policy `SessionManagerPolicy`
+SessionManagerPolicy
 
 ```json
 {
@@ -43,7 +44,28 @@ Create policy `SessionManagerPolicy`
 }
 ```
 
-- [ ] Create a key pair, link in EC2 launch UI
+SessionManagerRoleForEC2 trusted entities
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sts:AssumeRole"
+            ],
+            "Principal": {
+                "Service": [
+                    "ec2.amazonaws.com"
+                ]
+            }
+        }
+    ]
+}
+```
+
+- Create a key pair, link in EC2 launch UI
 
 - [ ] [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
 
