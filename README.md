@@ -6,6 +6,8 @@
 
 - Install AWS CLI on macOS `brew install awscli`
 
+- [ ] Enable 2FA for root account
+
 ## Run EC2 instance, connect with Session Manager
 
 - [Setting up Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started.html)
