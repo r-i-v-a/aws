@@ -4,9 +4,7 @@
 
 - [Register for AWS account](https://aws.amazon.com/free)
 
-- [ ] Try `brew update-reset`
-
-- [ ] Install AWS CLI on macOS `brew install awscli`
+- Install AWS CLI on macOS `brew install awscli`
 
 ## Run EC2 instance, connect with Session Manager
 
