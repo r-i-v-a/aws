@@ -18,6 +18,8 @@
 
 - [ ] [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
 
+- [ ] Create a key pair, allow SSH
+
 - [ ] Connect to instance -- Session Manager
 
 - [ ] Error -- Session Manager not able to connect
