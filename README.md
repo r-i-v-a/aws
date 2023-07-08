@@ -8,15 +8,11 @@
 
 - [ ] Enable 2FA for root account
 
-## Run EC2 instance, connect with Session Manager
+## Session Manager Setup
 
 - [Setting up Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started.html)
 
 - [Complete Session Manager prerequisites](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-prerequisites.html)
-
-- [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
-  - [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed-instances-default-host-management.html)
-    - Using default role `service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole`
 
 - [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
   - [Create a custom IAM role for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-create-iam-instance-profile.html)
@@ -64,6 +60,14 @@ SessionManagerRoleForEC2 trusted entities
     ]
 }
 ```
+
+### Default Host Management Configuration
+
+- [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
+  - [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed-instances-default-host-management.html)
+    - Using default role `service-role/AWSSystemsManagerDefaultEC2InstanceManagementRole`
+
+## Run EC2 Instance, Connect
 
 - Create a key pair, link in EC2 launch UI
 
