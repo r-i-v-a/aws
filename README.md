@@ -43,7 +43,7 @@ Create policy `SessionManagerPolicy`
 }
 ```
 
-- [ ] Create a key pair
+- [ ] Create a key pair, link in EC2 launch UI
 
 - [ ] [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
 
