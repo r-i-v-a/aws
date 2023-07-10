@@ -8,7 +8,19 @@
 
 - [ ] Enable 2FA for root account
 
-## Session Manager Setup
+## Launch EC2 Instance
+
+- [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
+
+## Connect With SSH
+
+- Create a key pair -- link in EC2 UI
+
+- [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:) with key pair
+
+- Instance list -- Instance -- Connect -- SSH instructions
+
+## Connect With Session Manager
 
 - [Setting up Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started.html)
 
@@ -61,6 +73,9 @@ SessionManagerRoleForEC2 trusted entities
 }
 ```
 
+- [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
+  - Use an [Amazon Machine Image with SSM Agent preinstalled](https://docs.aws.amazon.com/systems-manager/latest/userguide/ami-preinstalled-agent.html)
+
 ### Default Host Management Configuration
 
 - [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
@@ -69,15 +84,10 @@ SessionManagerRoleForEC2 trusted entities
 
 ## Run EC2 Instance, Connect
 
-- Create a key pair, link in EC2 launch UI
 
-- [ ] [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
 
-- [Amazon Machine Images with SSM Agent preinstalled](https://docs.aws.amazon.com/systems-manager/latest/userguide/ami-preinstalled-agent.html)
 
 For now, allow SSH
-
-- [ ] SSH to connect to instance
 
 - [ ] Check SSM Agent is running `sudo systemctl status amazon-ssm-agent`
 
