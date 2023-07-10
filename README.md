@@ -76,33 +76,17 @@ SessionManagerRoleForEC2 trusted entities
 - [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
   - Use an [Amazon Machine Image with SSM Agent preinstalled](https://docs.aws.amazon.com/systems-manager/latest/userguide/ami-preinstalled-agent.html)
 
+- (Connect with SSH, confirm SSM Agent is running)
+  - `sudo systemctl status amazon-ssm-agent`
+
+- [Attach or replace an instance profile](https://aws.amazon.com/premiumsupport/knowledge-center/attach-replace-ec2-instance-profile/)
+  - `SessionManagerRoleForEC2` role
+  - Short wait for instance profile to take effect
+
+- Instance list -- Instance -- Connect -- Session Manager
+
 ### Default Host Management Configuration
 
 - [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
   - [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed-instances-default-host-management.html)
     - Also tried this setting at account level, but it did not result in Session Manager being able to connect to EC2 instances by default
-
-## Run EC2 Instance, Connect
-
-
-
-
-For now, allow SSH
-
-- [ ] Check SSM Agent is running `sudo systemctl status amazon-ssm-agent`
-
-Yes
-
-- [ ] Connect to instance -- Session Manager
-
-- [ ] Error -- Session Manager not able to connect
-
-- [ ] Check if role is attached to instance?
-
-- [ ] [Attach or replace an instance profile](https://aws.amazon.com/premiumsupport/knowledge-center/attach-replace-ec2-instance-profile/)
-
-- [ ] [Modify IAM role for instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#ModifyIAMRole)
-
-- [ ] [Control user session access to managed nodes](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-restrict-access.html)
-
-- [ ] [Configure session preferences](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-configure-preferences.html)
