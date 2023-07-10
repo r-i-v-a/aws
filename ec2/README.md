@@ -1,12 +1,4 @@
-# AWS Learning Notes
-
-## Setup
-
-- [Register for AWS account](https://aws.amazon.com/free)
-
-- Install AWS CLI on macOS `brew install awscli`
-
-- [ ] Enable 2FA for root account
+# EC2
 
 ## Launch EC2 Instance
 
@@ -90,3 +82,7 @@ SessionManagerRoleForEC2 trusted entities
 - [Verify or add instance permissions for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-instance-profile.html)
   - [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed-instances-default-host-management.html)
     - Also tried this setting at account level, but it did not result in Session Manager being able to connect to EC2 instances by default
+
+## Terminate EC2 Instance
+
+- [Terminate EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
