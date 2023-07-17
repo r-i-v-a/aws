@@ -41,16 +41,12 @@ tmpfs          tmpfs               92696       0            92696   0% /run/user
 ```
 
 ```bash
-[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_1.txt
-[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_2.txt
-[ec2-user@ip-172-31-20-0 ~]$ ls /mnt/efs/fs1/
-my_file_1.txt  my_file_2.txt
+$ sudo touch /mnt/efs/fs1/my_file_1.txt
+$ sudo touch /mnt/efs/fs1/my_file_2.txt
 ```
 
 ```bash
-[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_1.txt
-[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_2.txt
-[ec2-user@ip-172-31-20-0 ~]$ ls /mnt/efs/fs1/
+$ ls /mnt/efs/fs1/
 my_file_1.txt  my_file_2.txt
 ```
 
