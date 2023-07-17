@@ -55,31 +55,16 @@ $ ls /mnt/efs/fs1/
 my_file_1.txt  my_file_2.txt
 ```
 
-- [ ] [Delete the EFS File System](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html#efs-clean-up)
+- [Clean Up Resources](https://docs.aws.amazon.com/efs/latest/ug/gs-step-five-cleanup.html)
+  - [Terminate EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
 
-- [ ] [Clean Up Resources](https://docs.aws.amazon.com/efs/latest/ug/gs-step-five-cleanup.html)
+- [ ] Use IAM role to grant permissions on EFS
 
 - [ ] [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
 
 ## CLI
 
 - [ ] [Walkthrough: Create an Amazon EFS File System and Mount It on an Amazon EC2 Instance Using the AWS CLI](https://docs.aws.amazon.com/efs/latest/ug/wt1-getting-started.html)
-
-## Launch EC2 Instance
-
-- [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
-
-## Connect With SSH
-
-- Create a key pair -- link in EC2 UI
-
-- [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:) with key pair
-
-- Instance list -- Instance -- Connect -- SSH instructions
-
-## Terminate EC2 Instance
-
-- [Terminate EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
 
 ## Resources
 
