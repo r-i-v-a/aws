@@ -2,6 +2,8 @@
 
 ## UI
 
+- [ ] [Use Amazon EFS With EC2, Quick Create](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html)
+
 - [ ] [Getting Started With Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html)
 
 - [Create Your Amazon EFS File System](https://docs.aws.amazon.com/efs/latest/ug/gs-step-two-create-efs-resources.html)
