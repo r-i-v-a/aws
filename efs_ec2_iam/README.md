@@ -24,6 +24,38 @@
     - EFS -- select EFS file system created before
     - Mount point `/mnt/efs/fs1`
 
+- [ ] [Test the EFS File System](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html#efs-test-file-system)
+
+- [ ] Unable to SSH to EC2 instance (when using default security group)
+
+```bash
+$ df -T
+Filesystem     Type            1K-blocks    Used        Available Use% Mounted on
+devtmpfs       devtmpfs             4096       0             4096   0% /dev
+tmpfs          tmpfs              463484       0           463484   0% /dev/shm
+tmpfs          tmpfs              185396     456           184940   1% /run
+/dev/nvme0n1p1 xfs               8310764 1555308          6755456  19% /
+tmpfs          tmpfs              463488       0           463488   0% /tmp
+tmpfs          tmpfs               92696       0            92696   0% /run/user/1000
+127.0.0.1:/    nfs4     9007199254739968       0 9007199254739968   0% /mnt/efs/fs1
+```
+
+```bash
+[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_1.txt
+[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_2.txt
+[ec2-user@ip-172-31-20-0 ~]$ ls /mnt/efs/fs1/
+my_file_1.txt  my_file_2.txt
+```
+
+```bash
+[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_1.txt
+[ec2-user@ip-172-31-20-0 ~]$ sudo touch /mnt/efs/fs1/my_file_2.txt
+[ec2-user@ip-172-31-20-0 ~]$ ls /mnt/efs/fs1/
+my_file_1.txt  my_file_2.txt
+```
+
+- [ ] [Delete the EFS File System](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html#efs-clean-up)
+
 - [ ] [Clean Up Resources](https://docs.aws.amazon.com/efs/latest/ug/gs-step-five-cleanup.html)
 
 - [ ] [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
