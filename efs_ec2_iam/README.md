@@ -18,6 +18,10 @@ Filesystem is created with [recommended settings](https://docs.aws.amazon.com/ef
 
 Create new key pair
 
+Network -- select default VPC, same as used by EFS
+
+Subnet -- Default subnet in any availability zone
+
 - [ ] [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
 
 ## CLI
