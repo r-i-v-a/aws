@@ -28,6 +28,8 @@
   - EFS -- select EFS file system created before
   - Mount point `/mnt/efs/fs1`
 
+- [ ] [Clean Up Resources](https://docs.aws.amazon.com/efs/latest/ug/gs-step-five-cleanup.html)
+
 - [ ] [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
 
 ## CLI
