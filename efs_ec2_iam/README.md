@@ -4,6 +4,10 @@
 
 - [ ] [Getting Started With Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html)
 
+- [ ] [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
+
+- [ ] [Walkthrough: Create an Amazon EFS File System and Mount It on an Amazon EC2 Instance Using the AWS CLI](https://docs.aws.amazon.com/efs/latest/ug/wt1-getting-started.html)
+
 ## Launch EC2 Instance
 
 - [Launch EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
@@ -23,3 +27,6 @@
 ## Resources
 
 - [Getting Started With Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html)
+- [Use Amazon EFS With EC2, Quick Create](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html)
+- [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
+- [Walkthrough: Create an Amazon EFS File System and Mount It on an Amazon EC2 Instance Using the AWS CLI](https://docs.aws.amazon.com/efs/latest/ug/wt1-getting-started.html)
