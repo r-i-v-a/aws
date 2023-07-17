@@ -2,9 +2,7 @@
 
 ## UI
 
-- [ ] [Use Amazon EFS With EC2, Quick Create](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html)
-
-- [ ] [Getting Started With Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html)
+- [Getting Started With Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html)
 
 - [Create Your Amazon EFS File System](https://docs.aws.amazon.com/efs/latest/ug/gs-step-two-create-efs-resources.html)
   - [Amazon Elastic File System -- Create File System](https://console.aws.amazon.com/efs/)
@@ -12,21 +10,28 @@
   - Filesystem is created with [recommended settings](https://docs.aws.amazon.com/efs/latest/ug/gs-step-two-create-efs-resources.html)
   
 - [Create Your EC2 Resources and Launch Your EC2 Instance](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html)
-  - [EC2 Dashboard -- Launch Instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
-  - Create new key pair
-  - Network
-    - Select default VPC, same as used by EFS
-  - Subnet
-    - Select a default subnet in any Availability Zone in the same Region
-  - Security group
-    - Select existing security group `default`
-  - File systems
-    - EFS -- select EFS file system created before
-    - Mount point `/mnt/efs/fs1`
 
-- [ ] [Test the EFS File System](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html#efs-test-file-system)
+- [EC2 Dashboard -- Launch Instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
 
-- [ ] Unable to SSH to EC2 instance (when using default security group)
+- Create new key pair
+
+- Network
+  - Select default VPC, same as used by EFS
+
+- Subnet
+  - Select a default subnet in any Availability Zone in the same Region
+
+- Security group
+  - Tutorial suggests selecting existing security group `default`, but had issues connecting with SSH to the instance
+  - Instead, created new security group
+    - Inbound rules: allow SSH from my IP address
+
+- File systems
+  - EFS -- select EFS file system created before
+  - Mount point `/mnt/efs/fs1`
+
+- [Test the EFS File System](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html#efs-test-file-system)
+  - Connect to instance with SSH
 
 ```bash
 $ df -T
@@ -82,3 +87,4 @@ my_file_1.txt  my_file_2.txt
 - [Use Amazon EFS With EC2, Quick Create](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html)
 - [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
 - [Walkthrough: Create an Amazon EFS File System and Mount It on an Amazon EC2 Instance Using the AWS CLI](https://docs.aws.amazon.com/efs/latest/ug/wt1-getting-started.html)
+- [Use Amazon EFS With EC2, Quick Create](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html)
