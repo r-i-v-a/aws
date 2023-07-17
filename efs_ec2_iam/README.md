@@ -9,24 +9,18 @@
   - Enter a name; select default VPC
   - Filesystem is created with [recommended settings](https://docs.aws.amazon.com/efs/latest/ug/gs-step-two-create-efs-resources.html)
   
-- [ ] [Create Your EC2 Resources and Launch Your EC2 Instance](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html)
-
-- [EC2 Dashboard -- Launch Instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
-
-- Create new key pair
-
-- Network
-  - Select default VPC, same as used by EFS
-
-- Subnet
-  - Select some default subnet in any Availability Zone in the same Region
-
-- Security group
-  - Select existing security group -- default
-
-- File systems
-  - EFS -- select EFS file system created before
-  - Mount point `/mnt/efs/fs1`
+- [Create Your EC2 Resources and Launch Your EC2 Instance](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html)
+  - [EC2 Dashboard -- Launch Instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#LaunchInstances:)
+  - Create new key pair
+  - Network
+    - Select default VPC, same as used by EFS
+  - Subnet
+    - Select a default subnet in any Availability Zone in the same Region
+  - Security group
+    - Select existing security group `default`
+  - File systems
+    - EFS -- select EFS file system created before
+    - Mount point `/mnt/efs/fs1`
 
 - [ ] [Clean Up Resources](https://docs.aws.amazon.com/efs/latest/ug/gs-step-five-cleanup.html)
 
