@@ -1,4 +1,4 @@
-# Connect EC2, EFS With IAM Role
+# Create EFS Filesystem, Mount to EC2
 
 ## UI
 
