@@ -1,4 +1,4 @@
-# Connect EC2, EFS With IAM Role
+# Create EFS Filesystem, Mount to EC2
 
 ## UI
 
@@ -57,8 +57,6 @@ my_file_1.txt  my_file_2.txt
 
 - [Clean Up Resources](https://docs.aws.amazon.com/efs/latest/ug/gs-step-five-cleanup.html)
   - [Terminate EC2 instance](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
-
-- [ ] Use IAM role to grant permissions on EFS
 
 - [ ] [Using VPC Security Groups for Amazon EC2 Instances and Mount Targets](https://docs.aws.amazon.com/efs/latest/ug/network-access.html)
 
